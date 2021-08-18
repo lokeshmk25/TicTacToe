@@ -7,6 +7,10 @@ public class TicTacToe {
         System.out.println("Welcome to TicTacToe game");
         GameBoard();
         players();
+        char[][] board = {{' ', ' ', ' '},
+                            {' ', ' ', ' '},
+                            {' ', ' ', ' '}};
+        printBoard(board);
     }
 
     public static char[] GameBoard() {
@@ -36,5 +40,12 @@ public class TicTacToe {
         }
         System.out.println("player option is:" +player1);
         System.out.println("computer is:" +computer);
+    }
+    static void printBoard(char[][] board) {
+        System.out.println(board[0][0] + "|" +  board[0][1] + "|" +  board[0][2] );
+        System.out.println("-+-+-");
+        System.out.println(board[1][0] + "|" +  board[1][1] + "|" +  board[1][2] );
+        System.out.println("-+-+-");
+        System.out.println(board[2][0] + "|" +  board[2][1] + "|" +  board[2][2] );
     }
 }
